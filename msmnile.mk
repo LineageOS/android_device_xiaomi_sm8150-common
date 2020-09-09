@@ -316,7 +316,8 @@ endif
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
-    fstab.qcom.vendor_ramdisk
+    fstab.qcom.vendor_ramdisk \
+    fstab.zram
 
 PRODUCT_PACKAGES += \
     init.class_main.sh \

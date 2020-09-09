@@ -369,3 +369,9 @@ service mi-serial-sh /vendor/bin/init.mi.serial.sh
     oneshot
 on post-fs && property:ro.product.device=nabu
     start mi-serial-sh
+
+on property:sys.boot_completed=1
+    write /sys/block/zram0/comp_algorithm lz4
+    swapon_all /vendor/etc/fstab.zram
+    write /proc/sys/vm/page-cluster 0
+    write /proc/sys/vm/swappiness 100
