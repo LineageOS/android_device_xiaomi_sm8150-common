@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "20b6e30f_d527a315",
+        "filename": "msmnile.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2021-08-07T09:03:15Z",
+      "side": 1,
+      "message": "Alphabetical order",
+      "range": {
+        "startLine": 240,
+        "startChar": 0,
+        "endLine": 241,
+        "endChar": 141
+      },
+      "revId": "a5d070b37b68dcdf3b1a5597458255180cdf7fc1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
