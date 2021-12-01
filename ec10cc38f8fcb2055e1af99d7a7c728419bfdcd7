@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bb8ec95_3c0409ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29758
+      },
+      "writtenOn": "2021-12-01T07:55:57Z",
+      "side": 1,
+      "message": "Erm, Both this and I66631f1f38a3e3a16e6d3dad87c83d0a98e6f851 fix the USB debugging on boot bug independently. I wonder which one really caused the bug. 😐",
+      "revId": "ec10cc38f8fcb2055e1af99d7a7c728419bfdcd7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
