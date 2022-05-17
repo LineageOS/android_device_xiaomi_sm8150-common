@@ -50,8 +50,5 @@ persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
-# SSR
-persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
