@@ -22,6 +22,30 @@
       },
       "revId": "2c624ad0ad7ff3f1fccc9d082041b492b90d470a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97b400a4_02ba642b",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2022-05-31T14:22:21Z",
+      "side": 1,
+      "message": "Whoops, https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8150-common/+/332073",
+      "parentUuid": "656d8f2e_78917e1b",
+      "range": {
+        "startLine": 1,
+        "startChar": 63,
+        "endLine": 1,
+        "endChar": 81
+      },
+      "revId": "2c624ad0ad7ff3f1fccc9d082041b492b90d470a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
