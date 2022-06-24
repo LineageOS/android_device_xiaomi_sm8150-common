@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ee6423d_0aa40ba1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2022-06-24T17:29:40Z",
+      "side": 1,
+      "message": "popup camera sounds not required on vayu.\ncan be in device tree.",
+      "revId": "fdfe382afa95df96ab3f7ba6c91cc855ebc030a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
