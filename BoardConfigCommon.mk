@@ -93,6 +93,7 @@ TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_msmnile
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 ifeq ($(TARGET_USE_DYNAMIC_PARTITIONS),true)
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -134,8 +135,6 @@ $(foreach p, $(call to-upper, $(ALL_PARTITIONS)), \
 
 # Partitions - legacy
 ifneq ($(TARGET_USE_DYNAMIC_PARTITIONS),true)
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1610612736
 endif # !TARGET_USE_DYNAMIC_PARTITIONS
