@@ -14,3 +14,7 @@ allow hal_sensors_default sysfs_iio:file rw_file_perms;
 
 # Access to ADSP properties
 get_prop(hal_sensors_default, vendor_adsprpc_prop)
+
+# Access to Touchpanel nodes
+allow hal_sensors_default sysfs_touchpanel:dir search;
+allow hal_sensors_default sysfs_touchpanel:file rw_file_perms;
