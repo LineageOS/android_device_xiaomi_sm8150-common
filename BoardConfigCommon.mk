@@ -93,6 +93,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 TARGET_KERNEL_CONFIG := \
     vendor/sm8150-perf_defconfig \
     vendor/xiaomi/sm8150-common.config
+TARGET_KERNEL_NO_GCC := true
 
 # Media
 TARGET_USES_ION := true
