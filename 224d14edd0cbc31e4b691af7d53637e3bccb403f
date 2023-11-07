@@ -22,6 +22,30 @@
       },
       "revId": "224d14edd0cbc31e4b691af7d53637e3bccb403f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bfabcc7_93427f00",
+        "filename": "lineage.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-11-07T13:13:23Z",
+      "side": 0,
+      "message": "Yeah, only vayu is shipping for now",
+      "parentUuid": "90aa3b6c_478d3c1b",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 41
+      },
+      "revId": "224d14edd0cbc31e4b691af7d53637e3bccb403f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
