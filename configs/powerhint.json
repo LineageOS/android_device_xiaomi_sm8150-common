@@ -271,6 +271,15 @@
       "HoldFd": true
     },
     {
+      "Name": "EnergyAware",
+      "Path": "/proc/sys/kernel/sched_energy_aware",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "ResetOnInit": true
+    },
+    {
       "Name": "DisplayWakeup",
       "Path": "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup",
       "Values": [
@@ -387,6 +396,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "EnergyAware",
+      "Duration": 5000,
+      "Value": "0"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 5000,
       "Value": "9999999"
@@ -474,6 +489,12 @@
       "Node": "L3BigClusterMinFreq",
       "Duration": 5000,
       "Value": "1440000000"
+    },
+    {
+      "PowerHint": "CAMERA_LAUNCH",
+      "Node": "EnergyAware",
+      "Duration": 1000,
+      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
@@ -708,6 +729,12 @@
       "Node": "CameraHalCpuset",
       "Duration": 0,
       "Value": "0-5"
+    },
+    {
+      "PowerHint": "CAMERA_SHOT",
+      "Node": "EnergyAware",
+      "Duration": 1000,
+      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_SHOT",
