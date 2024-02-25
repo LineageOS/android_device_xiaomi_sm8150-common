@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26d02aca_15b9d13d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2024-02-25T18:46:54Z",
+      "side": 1,
+      "message": "unless erofs is not in android_kernel_qcom_sm8150 we should drop this one from the chain",
+      "revId": "72939f30c7fda7fd35d072de22699c3a9f9fdf2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
