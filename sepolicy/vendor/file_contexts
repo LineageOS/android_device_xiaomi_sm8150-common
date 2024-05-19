@@ -1,3 +1,6 @@
+# Accessories
+/vendor/bin/hw/vendor\.lineage\.accessories-service\.xiaomi-sm8150                                         u:object_r:hal_lineage_accessories_default_exec:s0
+
 # Audio
 /dev/socket/audio_hw_socket                                                                         u:object_r:vendor_audio_socket:s0
 

@@ -82,6 +82,12 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
+# Accessories
+ifeq ($(TARGET_IS_TABLET),true)
+PRODUCT_PACKAGES += \
+    vendor.lineage.accessories-service.xiaomi-sm8150
+endif
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
