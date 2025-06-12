@@ -213,6 +213,10 @@ debug.stagefright.c2inputsurface=-1
 ro.odm.build.media_performance_class=30
 vendor.media.omx=0
 
+# Netmgr
+persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+
 # OTG
 persist.sys.oem.otg_support=true
 

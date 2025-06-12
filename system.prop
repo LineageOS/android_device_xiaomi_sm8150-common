@@ -35,13 +35,12 @@ persist.dbg.wfc_avail_ovr=1
 # Netflix
 ro.netflix.bsp_rev=Q855-16947-1
 
-# Netmgr
-persist.vendor.data.iwlan.enable=true
-persist.vendor.data.mode=concurrent
-
 # Perf
 ro.vendor.qti.core_ctl_max_cpu=4
 ro.vendor.qti.core_ctl_min_cpu=2
+
+# RmNet Data
+persist.data.df.iwlan_mux=9
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
