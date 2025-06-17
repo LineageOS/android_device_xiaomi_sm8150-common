@@ -91,7 +91,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 TARGET_KERNEL_CONFIG := \
     vendor/sm8150-perf_defconfig \
-    vendor/debugfs.config \
     vendor/xiaomi/sm8150-common.config
 
 # Media
