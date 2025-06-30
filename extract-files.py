@@ -25,8 +25,14 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libbinder_shim.so')
         .add_needed('libinput_shim.so'),
+    'vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc': blob_fixup()
+        .regex_replace(r'writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
+    'vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc': blob_fixup()
+        .regex_replace(r'writepid.*', 'task_profiles NNApiHALPerformance'),
     'vendor/etc/init/init.mi_thermald.rc': blob_fixup()
         .regex_replace('.*seclabel u:r:mi_thermald:s0\n', ''),
+    'vendor/etc/init/vendor.qti.media.c2@1.0-service.rc': blob_fixup()
+        .regex_replace(r'writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
     'vendor/etc/seccomp_policy/atfwd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
     'vendor/lib64/mediadrm/libwvdrmengine.so': blob_fixup()
