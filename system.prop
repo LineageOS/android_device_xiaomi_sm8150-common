@@ -40,7 +40,15 @@ ro.vendor.qti.core_ctl_max_cpu=4
 ro.vendor.qti.core_ctl_min_cpu=2
 
 # RmNet Data
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE

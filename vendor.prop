@@ -179,6 +179,11 @@ vendor.display.enable_optimize_refresh=1
 vendor.display.qdcm.disable_factory_mode=1
 vendor.display.qdcm.mode_combine=1
 
+# DPM
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpm.nsrm.bkg.evt=3955
+persist.vendor.dpmhalservice.enable=1
+
 # DRM
 drm.service.enabled=true
 
@@ -208,6 +213,9 @@ ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 vendor.gralloc.disable_ubwc=0
 
+# Incremental FS
+ro.incremental.enable=yes
+
 # Media
 debug.stagefright.c2inputsurface=-1
 ro.odm.build.media_performance_class=30
@@ -234,6 +242,9 @@ persist.vendor.sensors.enable.mag_filter=true
 
 # Shutdown
 sys.vendor.shutdown.waittime=500
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
 sys.usb.mtp.batchcancel=1
