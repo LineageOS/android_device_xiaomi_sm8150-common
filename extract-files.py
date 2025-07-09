@@ -18,13 +18,6 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
-    ('system_ext/lib/libwfdmmsrc_system.so', 'system_ext/lib64/libwfdmmsrc_system.so'): blob_fixup()
-        .add_needed('libgui_shim.so'),
-    ('system_ext/lib/libwfdservice.so', 'system_ext/lib64/libwfdservice.so'): blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libbinder_shim.so')
-        .add_needed('libinput_shim.so'),
     'vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc': blob_fixup()
         .regex_replace(r'writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
     'vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc': blob_fixup()
