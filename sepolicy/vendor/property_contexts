@@ -41,6 +41,7 @@ ro.ril.miui.imei                                                                
 ro.ril.oem.imei                                                                                     u:object_r:vendor_deviceid_prop:s0
 ro.ril.oem.meid                                                                                     u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.imei                                                                                  u:object_r:vendor_deviceid_prop:s0
+ro.vendor.oem.meid                                                                                  u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.psno                                                                                  u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.sno                                                                                   u:object_r:vendor_deviceid_prop:s0
 
