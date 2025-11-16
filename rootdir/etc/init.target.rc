@@ -210,7 +210,8 @@ on charger
     start vendor.power_off_alarm
     setprop sys.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
-    start leds-sh
+    write /sys/class/leds/green/max_brightness 32
+    write /sys/class/leds/blue/max_brightness 32
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
    class main
@@ -247,11 +248,6 @@ service vendor.energy-awareness /vendor/bin/energy-awareness
     oneshot
 
 service panel-info-sh /system/vendor/bin/sh /vendor/etc/init.panel_info.sh
-    class core
-    user root
-    oneshot
-
-service leds-sh /system/vendor/bin/sh /vendor/etc/init.leds.sh
     class core
     user root
     oneshot
