@@ -18,6 +18,8 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .add_needed('libinput_shim.so'),
     'vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc': blob_fixup()
         .regex_replace(r'writepid.*', 'task_profiles ProcessCapacityHigh HighPerformance'),
     'vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc': blob_fixup()
