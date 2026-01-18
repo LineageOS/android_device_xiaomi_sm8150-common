@@ -1,23 +1,10 @@
 //
-// Copyright (C) 2022-2024 The LineageOS Project
+// Copyright (C) 2022-2026 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 soong_namespace {
-}
-
-soong_config_module_type {
-    name: "xiaomi_msmnile_wifi_install_symlink",
-    module_type: "install_symlink",
-    config_namespace: "XIAOMI_MSMNILE",
-    variables: ["PARTITION_SCHEME"],
-    properties: ["symlink_target"],
-}
-
-soong_config_string_variable {
-    name: "PARTITION_SCHEME",
-    values: ["dynamic", "legacy", "vab"],
 }
 
 install_symlink {
@@ -27,24 +14,14 @@ install_symlink {
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
 
-xiaomi_msmnile_wifi_install_symlink {
+install_symlink {
     name: "firmware_wlan_mac.bin_symlink",
     vendor: true,
     installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
-    soong_config_variables: {
-        PARTITION_SCHEME: {
-            dynamic: {
-                symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
-            },
-            legacy: {
-                symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
-            },
-            vab: {
-                symlink_target: "/mnt/vendor/persist/wlan/wlan_mac.bin",
-            },
-            conditions_default: {
-                symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
-            },
-        },
-    },
+    symlink_target: select(soong_config_variable("XIAOMI_MSMNILE", "PARTITION_SCHEME"), {
+        "dynamic": "/mnt/vendor/persist/wlan_mac.bin",
+        "legacy": "/mnt/vendor/persist/wlan_mac.bin",
+        "vab": "/mnt/vendor/persist/wlan/wlan_mac.bin",
+        default: "/mnt/vendor/persist/wlan_mac.bin",
+    }),
 }

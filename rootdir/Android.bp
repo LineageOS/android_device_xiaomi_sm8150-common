@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 The LineageOS Project
+// Copyright (C) 2022-2026 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -48,37 +48,14 @@ sh_binary {
 }
 
 // fstab
-soong_config_module_type {
-    name: "xiaomi_msmnile_rootdir_prebuilt_etc",
-    module_type: "prebuilt_etc",
-    config_namespace: "XIAOMI_MSMNILE",
-    variables: ["PARTITION_SCHEME"],
-    properties: ["src"],
-}
-
-soong_config_string_variable {
-    name: "PARTITION_SCHEME",
-    values: ["dynamic", "legacy", "vab"],
-}
-
-xiaomi_msmnile_rootdir_prebuilt_etc {
+prebuilt_etc {
     name: "fstab.qcom",
-    soong_config_variables: {
-        PARTITION_SCHEME: {
-            dynamic: {
-                src: "etc/fstab_dynamic.qcom",
-            },
-            legacy: {
-                src: "etc/fstab_legacy.qcom",
-            },
-            vab: {
-                src: "etc/fstab_AB.qcom",
-            },
-            conditions_default: {
-                src: "etc/fstab_dynamic.qcom",
-            },
-        },
-    },
+    src: select(soong_config_variable("XIAOMI_MSMNILE", "PARTITION_SCHEME"), {
+        "dynamic": "etc/fstab_dynamic.qcom",
+        "legacy": "etc/fstab_legacy.qcom",
+        "vab": "etc/fstab_AB.qcom",
+        default: "etc/fstab_dynamic.qcom",
+    }),
     vendor: true,
     ramdisk_available: true,
     vendor_ramdisk_available: true,
