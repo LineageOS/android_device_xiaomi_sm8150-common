@@ -16,5 +16,8 @@
 -->
 <resources>
     <bool name="call_recording_enabled">true</bool>
+
+    <!-- 1 (MIC) for microphone audio source
+         4 (VOICE_CALL) for voice call uplink + downlink audio source (default) -->
     <integer name="call_recording_audio_source">4</integer>
 </resources>
