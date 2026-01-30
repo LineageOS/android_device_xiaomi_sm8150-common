@@ -316,14 +316,14 @@ public class PopupCameraService extends Service implements Handler.Callback {
     private void lightUp() {
         if (mPopupCameraPreferences.isLedAllowed()) {
             for (String node : mLightNodes) {
-                FileUtils.writeLine(node, "1");
+                FileUtils.writeLine(node, "180");
             }
 
             mHandler.postDelayed(() -> {
                 for (String node : mLightNodes) {
                     FileUtils.writeLine(node, "0");
                 }
-            }, 2300);
+            }, 1000);
         }
     }
 

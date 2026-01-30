@@ -53,7 +53,7 @@
 
     <!-- Popup camera light nodes -->
     <string-array name="popupcamera_light_nodes" translatable="false">
-        <item>/sys/class/leds/green/breath</item>
-        <item>/sys/class/leds/blue/breath</item>
+        <item>/sys/class/leds/green/brightness</item>
+        <item>/sys/class/leds/blue/brightness</item>
     </string-array>
 </resources>
