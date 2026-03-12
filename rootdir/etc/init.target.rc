@@ -135,17 +135,6 @@ on boot
     chown system system /sys/class/drm/card0-DSI-1/doze_backlight
     start rmt_storage
     start rfs_access
-    write /dev/cpuset/top-app/cpus 0-3
-    write /dev/cpuset/audio-app/cpus 1-2
-    write /dev/cpuset/foreground/cpus 0-3
-    write /dev/cpuset/foreground/boost/cpus 0-3
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-7
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
