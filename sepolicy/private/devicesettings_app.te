@@ -1,4 +1,4 @@
-type devicesettings_app, domain;
+type devicesettings_app, domain, coredomain;
 typeattribute devicesettings_app mlstrustedsubject;
 
 app_domain(devicesettings_app)
@@ -21,9 +21,6 @@ binder_call(devicesettings_app, gpuservice)
 
 # Allow XiaomiParts to search sysfs_leds directory
 allow devicesettings_app sysfs_leds:dir search;
-
-# Allow XiaomiParts to read/write to sysfs_leds
-allow devicesettings_app sysfs_leds:file rw_file_perms;
 
 # Allow XiaomiParts to write to sysfs_thermal
 allow devicesettings_app sysfs_thermal:file w_file_perms;
