@@ -16,6 +16,24 @@
       "message": "Is this actually true?",
       "revId": "e997532afb08ec44fdbfe48c51cae84e4356d4d4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fde77e5d_3c7506d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34612
+      },
+      "writtenOn": "2026-09-16T05:26:02Z",
+      "side": 1,
+      "message": "Yeah, actually libperf can parse it, but nothing in our framework calls it. On Pixel, it\u0027s invoked by device health services.",
+      "parentUuid": "e79ec4c4_596b191f",
+      "revId": "e997532afb08ec44fdbfe48c51cae84e4356d4d4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
