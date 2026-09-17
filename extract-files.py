@@ -18,8 +18,10 @@ from extract_utils.main import (
 )
 
 blob_fixups: blob_fixups_user_type = {
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .add_needed('libinput_shim.so'),
+    'system/framework/WfdCommon.jar': blob_fixup()
+        .apktool_patch('blob-patches/WfdCommon.patch'),
+    'system_ext/lib64/libwfdservice.so': blob_fixup()
+        .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
     'vendor/etc/msm_irqbalance.conf': blob_fixup()
         .regex_replace('IGNORED_IRQ=19,21,39', 'IGNORED_IRQ=19,21,38'),
     'vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc': blob_fixup()
