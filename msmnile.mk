@@ -374,7 +374,9 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Vibrator
+ifneq ($(TARGET_IS_TABLET),true)
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+endif
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
