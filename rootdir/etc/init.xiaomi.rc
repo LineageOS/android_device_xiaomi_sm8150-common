@@ -60,11 +60,13 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fpc 0770 system system
 
 # NFC
-service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc2-service.nxp
     override
+    interface aidl android.hardware.nfc.INfc/default
+    interface aidl vendor.nxp.nxpnfc_aidl.INxpNfc/default
     class early_hal
     user nfc
-    group nfc
+    group nfc drmrpc system
     disabled
 
 on boot && property:ro.boot.product.hardware.sku=nfc
