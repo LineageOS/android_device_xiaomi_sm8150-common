@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff81b58a_b2db481a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34612
+      },
+      "writtenOn": "2026-11-22T23:07:48Z",
+      "side": 1,
+      "message": "Removing the read/write rules will break the popup camera LEDs.",
+      "revId": "af7030fa59347f45c726761447ed55ca8db7f062",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
