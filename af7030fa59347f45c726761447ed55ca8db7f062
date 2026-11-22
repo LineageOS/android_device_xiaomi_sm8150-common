@@ -16,6 +16,23 @@
       "message": "Removing the read/write rules will break the popup camera LEDs.",
       "revId": "af7030fa59347f45c726761447ed55ca8db7f062",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a05cc70e_1c5a91c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-11-22T23:33:28Z",
+      "side": 1,
+      "message": "Perhaps you just need to label it properly? See: https://github.com/LineageOS/android_device_samsung_sm8250-common/commit/45f70f1d1216049b7b434872b181bf041187a794",
+      "revId": "af7030fa59347f45c726761447ed55ca8db7f062",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
