@@ -1,3 +1,7 @@
 # Access to the sysfs LED files
 allow hal_light_default sysfs_leds:dir r_dir_perms;
 allow hal_light_default sysfs_leds:file rw_file_perms;
+
+# Access to the popup camera LEDs, also used as notification LEDs
+allow hal_light_default vendor_sysfs_popup_leds:dir r_dir_perms;
+allow hal_light_default vendor_sysfs_popup_leds:file rw_file_perms;

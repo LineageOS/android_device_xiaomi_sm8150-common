@@ -1,0 +1,8 @@
+# Allow XiaomiParts to control the popup camera LEDs
+allow devicesettings_app sysfs_leds:dir search;
+allow devicesettings_app sysfs_leds:lnk_file read;
+allow devicesettings_app vendor_sysfs_popup_leds:dir search;
+allow devicesettings_app vendor_sysfs_popup_leds:file rw_file_perms;
+
+# Allow XiaomiParts to write to sysfs_thermal
+allow devicesettings_app sysfs_thermal:file w_file_perms;
