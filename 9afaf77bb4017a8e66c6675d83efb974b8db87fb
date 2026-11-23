@@ -34,6 +34,24 @@
       "parentUuid": "0fd5b22d_a4f3cb40",
       "revId": "9afaf77bb4017a8e66c6675d83efb974b8db87fb",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45ca8f7e_efdf4b5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34612
+      },
+      "writtenOn": "2026-11-23T10:25:37Z",
+      "side": 1,
+      "message": "Only vayu and nabu set this to 1 in stock. Override in device-specific trees instead?",
+      "parentUuid": "7a9d53d8_c63caf38",
+      "revId": "9afaf77bb4017a8e66c6675d83efb974b8db87fb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
